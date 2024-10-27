@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { exec } from 'node:child_process';
+import { exec } from 'child_process';
 import { promisify } from 'node:util';
 import fs from 'fs';
 import FileType from 'file-type';
