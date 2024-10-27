@@ -12,8 +12,8 @@
     "url": "https://github.com/wekan/wekan/issues"
   },
   "engines": {
-    "node": "14.21.4",
-    "npm": "6.14.17"
+    "node": "14.21.x",
+    "npm": "6.14.x"
   },
   "homepage": "https://wekan.github.io",
   "devDependencies": {
