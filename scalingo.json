@@ -4,5 +4,47 @@
   "repository": "https://github.com/wekan/wekan/",
   "logo": "https://raw.githubusercontent.com/wekan/wekan/master/meta/icons/wekan-150.png",
   "website": "https://wekan.github.io",
-  "addons": ["scalingo-mongodb"]
+  "addons": ["scalingo-mongodb"],
+  "env": {
+    "ROOT_URL": {
+      "description": "Mandatory",
+      "value": "http://localhost"
+    },
+    "MONGO_URL": {
+      "description": "Mandatory",
+      "value": "mongodb://wekandb:27017/wekan"
+    },
+    "MAIL_URL": {
+      "description": "Mandatory",
+      "value": "smtp://<mail_url>:25/?ignoreTLS=true&tls={rejectUnauthorized:false}"
+    },
+    "MAIL_FROM": {
+      "description": "Mandatory",
+      "value": "Wekan Notifications <noreply.wekan@mydomain.com>"
+    },
+    "BIGEVENTS_PATTERN": {
+      "description": "Optional",
+      "value": "NONE"
+    },
+    "BROWSER_POLICY_ENABLED": {
+      "description": "Optional",
+      "value": "true"
+    },
+    "CARD_OPENED_WEBHOOK_ENABLED": {
+      "description": "Optional",
+      "value": "false"
+    },
+    "RICHER_CARD_COMMENT_EDITOR": {
+      "description": "Optional",
+      "value": "false"
+    },
+    "WITH_API": {
+      "description": "Optional",
+      "value": "true"
+    },
+    "WRITABLE_PATH": {
+      "description": "Optional",
+      "value": "/data"
+    }
+  }
 }
