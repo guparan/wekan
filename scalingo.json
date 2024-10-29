@@ -4,6 +4,12 @@
   "repository": "https://github.com/wekan/wekan/",
   "logo": "https://raw.githubusercontent.com/wekan/wekan/master/meta/icons/wekan-150.png",
   "website": "https://wekan.github.io",
+  "formation": {
+    "web": {
+      "amount": 1,
+      "size": "S"
+    }
+  },
   "addons": ["scalingo-mongodb"],
   "env": {
     "ROOT_URL": {
